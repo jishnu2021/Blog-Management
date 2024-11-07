@@ -1,0 +1,9 @@
+clientside/node_modules
+clientside/.env
+serverside/.env
+serverside/node_modules
+/node_modules
+coverage/
+.idea/
+serverside/dist
+package-lock.json
