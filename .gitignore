@@ -1,5 +1,5 @@
 clientside/node_modules
-serverside/.env.sample
+
 serverside/node_modules
 /node_modules
 coverage/
