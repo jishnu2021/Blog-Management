@@ -1,5 +1,4 @@
 clientside/node_modules
-clientside/.env.sample
 serverside/.env.sample
 serverside/node_modules
 /node_modules
