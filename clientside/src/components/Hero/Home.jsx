@@ -1,6 +1,6 @@
 import React from 'react'
 import hero from '../../assets/hero.jpg'
-import BlogManagement from './BlogManagement.JSX'
+import BlogManagement from './BlogManagement.jsx'
 import BlogManagementInfo from './BlogManagementInfo'
 import PlatformWorkflow from './PlatformWorkflow'
 import FeedbackSlider from './FeedbackSlider.jsx'

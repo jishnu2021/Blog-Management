@@ -27,8 +27,8 @@ mongoose.connect(MONGO_URL, {
     .catch((err) => console.error('Error connecting to MongoDB', err));
 
 // Root route handler
-app.get('/', (req, res) => {
-    res.send('Welcome to the Task Manager API!');
+app.get('/hello', (req, res) => {
+    res.send('Welcome to the Blog Management API!');
 });
 
 app.use('/', Routes);
