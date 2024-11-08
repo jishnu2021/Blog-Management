@@ -18,7 +18,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch('http://localhost:5000/getBlogs');
+        const response = await fetch(`${import.meta.env.VITE_CLIENT_SIDE}/getBlogs`);
         const data = await response.json();
         if (response.ok) {
           setBlogs(data);
@@ -57,7 +57,7 @@ const Blog = () => {
             {blogs.map((blog) => (
               <div key={blog._id} className="bg-white p-4 rounded-lg shadow-md">
                 <img
-                  src={`http://localhost:5000/${blog.image}`}
+                  src={`${import.meta.env.VITE_CLIENT_SIDE}/${blog.image}`}
                   alt={blog.title}
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />

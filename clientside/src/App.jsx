@@ -8,6 +8,9 @@ import CoursesPage from "./components/course/CoursesPage";
 import AdminRegister from "./components/registeradmin/AdminRegister";
 import AdminLogin from "./components/registeradmin/AdminLogin";
 import Footer from "./components/footer/Footer";
+import PaymentPage from "./components/course/PaymentPage";
+import PaymentSuccessPage from "./components/course/PaymentSuccessPage";
+import Feature from "./components/feature/Feature";
 
 function App() {
   const location = useLocation(); // Access the current route path
@@ -19,7 +22,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="blog" element={<Blog />} />
         <Route path="blog/:blogId" element={<BlogDetails />} />
-        <Route path="courses" element={<CoursesPage />} />
+        <Route exact path="courses" element={<CoursesPage />} />
+        <Route path='feature' element={<Feature/>}/>
+        <Route path="payment" element={<PaymentPage/>} />
+        <Route path="payment-success" element={<PaymentSuccessPage/>} />
         <Route path="adminregister" element={<AdminRegister />} />
         <Route path="adminlogin" element={<AdminLogin />} />
       </Routes>

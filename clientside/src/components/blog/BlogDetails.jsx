@@ -8,7 +8,7 @@ const BlogDetails = () => {
   useEffect(() => {
     const fetchBlogDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/blog/${blogId}`);
+        const response = await fetch(`${import.meta.env.VITE_CLIENT_SIDE}/blog/${blogId}`);
         const data = await response.json();
 
         if (response.ok) {
@@ -28,7 +28,7 @@ const BlogDetails = () => {
     return <p>Loading...</p>;
   }
 
-  const imageUrl = `http://localhost:5000/${blog.image}`;
+  const imageUrl = `${import.meta.env.VITE_CLIENT_SIDE}/${blog.image}`;
   console.log("The image is",imageUrl)
 
   return (
